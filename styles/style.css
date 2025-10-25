@@ -159,7 +159,7 @@ ul {
 .categoriesVariety {
     max-width: 1597px;
     max-height: 520px;
-    margin: 0 auto;
+    margin: 89px auto 0;
     font-family: 'main-font', serif;
 }
 .categories-header {
@@ -188,11 +188,13 @@ ul {
     justify-content: space-evenly;
 }
 .button-left, .button-right {
+    cursor: pointer;
     border: none;
     width: 56px;
     height: 56px;
     background-color: #1A1A1A;
     border-radius: 8px;
+    padding: 14px;
 }
 .indicator-container {
     display: flex;
@@ -205,11 +207,18 @@ ul {
     height: 4px;
     background-color: #333;
 }
+.categories-demo-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+}
 .category-card {
     display: grid;
     grid-template: 252px 27px /  1fr;
     max-width: 295px;
     max-height: 342px;
+    width: 100%;
     border-radius: 12px;
     background-color: #1A1A1A;
     align-items: center;
@@ -246,6 +255,7 @@ ul {
     max-width: 235px;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 .action-button h3 {
     margin: 0;
