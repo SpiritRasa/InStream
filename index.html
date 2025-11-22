@@ -2,52 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>In stream</title>
     <link rel="stylesheet"
           href="styles/style.css">
 </head>
 <body>
 <!--Шапка сайта-->
-<header class="header container">
-    <img class="logo"
-         src="/src/svg-icons/logo-desktop.svg"
-         alt="Логотип В Потоке"
-         class="container"
-         width="200"
-         height="60"
+<header class="header">
+    <img
+            class="header__logo"
+            src="src/svg-icons/logo-desktop.svg"
+            alt="Логотип Впотоке"
     >
-    <nav class="navigation">
-        <ul class="navigation__list">
-            <li>
-                <button class="navigation-item isActive">Главная</button>
-            </li>
-            <li>
-                <button class="navigation-item">Кино и сериалы</button>
-            </li>
-            <li><button class="navigation-item">Поддержка</button></li>
-            <li>
-                <button class="navigation-item">Кино и сериалы</button>
-            </li>
+    <nav class="header__nav">
+        <ul class="header__nav-list">
+            <li class="header__nav-link isActive"><button class="nav-btn">Главная</button></li>
+            <li class="header__nav-link"><button class="nav-btn">Кино и сериалы</button></li>
+            <li class="header__nav-link"><button class="nav-btn">Поддержка</button></li>
+            <li class="header__nav-link"><button class="nav-btn">Подписки</button></li>
         </ul>
     </nav>
-    <div class="search-block">
-        <ul class="search-block__list">
-            <li><a href="/">
-                <img
-                        src="/src/svg-icons/search.svg"
-                        alt="Поиск"
-                        width="34"
-                        height="34"
-                >
-            </a></li>
-            <li><a href="/">
-                <img
-                        src="/src/svg-icons/notification.svg"
-                        alt="Уведомления"
-                        width="34"
-                        height="34">
-            </a></li>
-        </ul>
+    <div class="header__actions">
+        <button class="header__actions-btn">
+            <img
+                    src="/src/svg-icons/search.svg"
+                    width="34"
+                    height="34"
+                    alt="Поиск"
+            >
+        </button>
+        <button class="header__actions-btn">
+            <img
+                    src="/src/svg-icons/notification.svg"
+                    width="34"
+                    height="34"
+                    alt="Поиск"
+            >
+        </button>
     </div>
 </header>
 </body>
