@@ -201,15 +201,10 @@ body {
     width: 44px;
     height: 44px;
     background-color: var(--black-10);
+    background-repeat: no-repeat;
     border: 1px solid var(--black-12);
+    padding: 10px;
 }
-.pagination-block__button--left {
-    background-image: url("/src/svg-icons/arrow-left.svg");
-}
-.pagination-block__button--right {
-    background-image: url("/src/svg-icons/arrow-right.svg");
-}
-
 
 .accent-logo {
     width: 15.6vw;
