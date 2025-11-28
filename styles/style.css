@@ -37,7 +37,7 @@
     --red-95: #ffe5e5;
     --red-99: #fffafa;
 
-    --black-06: #0f0f0f;
+    --black-06: rgba(15, 15, 15, 0.37);
     --black-08: #141414;
     --black-10: #1a1a1a;
     --black-12: #1f1f1f;
@@ -157,7 +157,7 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    width: 100vw;
+    width: calc(100vw - 25px);
     height: calc(100vh - 100px);
     z-index: -1;
     overflow-y: clip;
@@ -317,6 +317,39 @@ a {
     margin-bottom: 40px;
 }
 
+.devices-section {
+    margin-top: 15vh;
+}
+
+.devices-section__card {
+    display: flex;
+    flex-direction: column;
+    width: 26.6vw;
+    border: 1px solid var(--black-15);
+    border-radius: 12px;
+    padding: 50px;
+    background: var(--black-06),
+    linear-gradient(230deg, rgba(229, 0, 0, 0.5) 0%, rgba(229, 0, 0, 0.5) 81.37%);
+}
+.devices-section__card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    line-height: 150%;
+    font-size: 24px;
+    font-family: 'Manrope-semibold', sans-serif;
+    color: var(--absolute-white);
+}
+.devices-section__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    background-color: var(--black-08);
+    border: 1px solid var(--black-12);
+    border-radius: 12px;
+}
 
 @media (max-width: 1440px) {
     .categories-section__card {
@@ -342,7 +375,7 @@ a {
     }
     .section-header {
         margin-bottom: 35px;
-        margin-top: 30vh;
+        margin-top: 10vh;
     }
     .categories-section-header {
         margin-block: 20px;
@@ -378,11 +411,35 @@ a {
         overflow-x: hidden;
     }
     .categories-section__card {
+        flex: 0 0 auto;
         width: 45.6vw;
+    }
+    .categories-section__image {
+        width: 17.17vw;
+        height: 17vw;
     }
 }
 
 @media (max-width: 600px) {
+    .header__nav {
+        width: 50vw;
+        height: fit-content;
+    }
+    .header__nav-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        gap: 15px;
+    }
+    .header__nav-link {
+        display: flex;
+        justify-content: center;
+    }
+    .nav-btn {
+        font-size: 1.5em;
+    }
+
     .categories-section__pagination-block {
         padding: 6px;
     }
