@@ -102,8 +102,9 @@ body {
     line-height: 150%;
     color: var(--absolute-white);
     border-radius: var(--button-radius);
+    border: none;
 }
-.button:before {
+.start-button:before {
     display: inline-flex;
     content: '';
     background-image: url("/src/svg-icons/play-icon.svg");
@@ -175,7 +176,7 @@ a {
 }
 .section {
     max-width: var(--width);
-    margin-top: 100vh;
+    margin: 10vh auto 0 auto;
 }
 
 .section-header {
@@ -399,6 +400,53 @@ a {
     font-size: 22px;
     line-height: 150%;
     color: var(--absolute-white);
+}
+
+.tax-section-body {
+    display: flex;
+    gap: 30px;
+}
+.tax-section__card {
+    display: flex;
+    flex-direction: column;
+    gap: 2.6vw;
+    padding: 2.6vw;
+    width: 26.7vw;
+    background-color: var(--black-10);
+    border: 1px solid var(--black-15);
+    border-radius: 12px;
+}
+.tax-section__card-header {
+    font-family: Manrope-bold, sans-serif;
+    font-size: 24px;
+    color: var(--absolute-white);
+    margin: 0;
+    text-align: left;
+}
+.tax-section__description {
+    font-family: Manrope-regular, sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--grey-60);
+    margin: 0;
+}
+.tax-section__price {
+    font-family: Manrope-semibold, sans-serif;
+    font-size: 40px;
+    line-height: 73%;
+    color: var(--absolute-white);
+    margin: 0;
+}
+.tax-section__card-price {
+    display: flex;
+    gap: 20px;
+}
+.tax-section__button {
+
+}
+.tax-section__button--trial {
+    background-color: var(--black-08);
+    border: 1px solid var(--black-12);
 }
 @media (max-width: 1440px) {
     .categories-section__card {
