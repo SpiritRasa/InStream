@@ -497,6 +497,100 @@ a {
     width: 100%;
     height: 100%;
 }
+
+.footer {
+    margin-top: 10vh;
+    width: 100%;
+    background-color: var(--black-06);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 8.4vw;
+}
+.navigation {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    justify-content: space-between;
+}
+.navigation>ul {
+    padding-inline-start: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+.navigation>ul>li>a {
+    text-decoration: none;
+    color: var(--grey-60);
+    font-family: 'manrope-medium', sans-serif;
+    line-height: 150%;
+}
+.footer__list-title {
+    color: var(--absolute-white) !important;
+    font-family: 'manrope-semibold', sans-serif;
+    font-size: 20px;
+    line-height: 150%;
+}
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: var(--absolute-white);
+    width: 56px;
+    height: 56px;
+    background-color: var(--black-10);
+    border: 1px solid var(--black-15);
+}
+.contacts-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline-start: 0;
+    gap: 14px;
+}
+.contacts>li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+}
+.footer__info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: end;
+    border-top: 1px solid var(--black-15);
+    margin-top: 5.2vw;
+    color: var(--grey-60);
+}
+.footer__policies {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding-inline-start: 0;
+}
+.footer__policies-link {
+    font-family: 'manrope-regular', sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--grey-60);
+}
+.footer__policies-link--accent {
+    padding-inline: 20px;
+    border-left: 1px solid var(--black-15);
+    border-right: 1px solid var(--black-15);
+}
 @media (max-width: 1440px) {
     .categories-section__card {
         padding: 20px;
