@@ -107,7 +107,7 @@ body {
 .start-button:before {
     display: inline-flex;
     content: '';
-    background-image: url("/src/svg-icons/play-icon.svg");
+    background-image: url("src/svg-icons/play-icon.svg");
     width: 15px;
     height: 16px;
 }
