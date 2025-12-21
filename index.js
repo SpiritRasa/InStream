@@ -1,3 +1,4 @@
+// Слйдер для секции категорий
 const sliderElement = document.querySelector('.categories-section__body');
 const slidesElement = Array.from(sliderElement.querySelectorAll('.categories-section__slide'));
 
@@ -45,3 +46,24 @@ function updateSlider() {
 }
 
 updateSlider();
+
+// Скрытие и появление бургер-меню
+const burgerBtnElement = document.querySelector('.burger-btn');
+const menuElement = document.querySelector('.header__nav');
+const burgerBtnCloseElement = document.querySelector('.burger-btn--close');
+
+burgerBtnElement.addEventListener('click', () => {
+    if (getComputedStyle(menuElement).display === 'none') {
+        menuElement.style.display = 'flex';
+        burgerBtnElement.style.display = 'none';
+        burgerBtnCloseElement.style.display = 'flex';
+    }
+})
+
+burgerBtnCloseElement.addEventListener('click', () => {
+    if (getComputedStyle(menuElement).display === 'flex') {
+        menuElement.style.display = 'none';
+        burgerBtnElement.style.display = 'flex';
+        burgerBtnCloseElement.style.display = 'none';
+    }
+})
